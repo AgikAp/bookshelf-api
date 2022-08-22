@@ -9,23 +9,23 @@ Menggunakan HAPI FRAMEWORK api ini dapat menyimpan data buku tanpa menggunakan d
 1. List Buku 
    GET : '/books'
    
-   # Menggunakan GET untuk mengambil semua data buku di server session
-   # Anda bisa menambahkan query spesifik untuk mendapatkan data tertentu
+   - Menggunakan GET untuk mengambil semua data buku di server session
+   - Anda bisa menambahkan query spesifik untuk mendapatkan data tertentu
    
      ?name=String
-     # Untuk mendapatkan data berdasarkan nama buku
+     - Untuk mendapatkan data berdasarkan nama buku
      
      ?finished=1
-     # Untuk mendapatkan data yang sudah selesai dibaca
+     - Untuk mendapatkan data yang sudah selesai dibaca
      
      ?reading=1
-     # Untuk mendapatkan data buku yang sedang dibaca
+     - Untuk mendapatkan data buku yang sedang dibaca
 
 2. Menambahkan Buku
    POST : '/books'
    
-   # Menggunankan POST untuk menambahkan sebuah data buku ke dalam session server
-   # Contoh JSON yang dikirim 
+   - Menggunankan POST untuk menambahkan sebuah data buku ke dalam session server
+   - Contoh JSON yang dikirim 
      { 
         name: String, 
         year: Number, 
@@ -40,8 +40,8 @@ Menggunakan HAPI FRAMEWORK api ini dapat menyimpan data buku tanpa menggunakan d
 3. Edit Buku
    PUT : '/books/{bookId}
    
-   # Menggunankan PUT untuk mengubah sebuah data buku di dalam session server
-   # Contoh JSON yang dikirim 
+   - Menggunankan PUT untuk mengubah sebuah data buku di dalam session server
+   - Contoh JSON yang dikirim 
      { 
         name: String, 
         year: Number, 
@@ -56,4 +56,4 @@ Menggunakan HAPI FRAMEWORK api ini dapat menyimpan data buku tanpa menggunakan d
 4. Mengambil Sebuah Buku
    GET : '/books/{bookId}'
    
-   # Menggunakan GET untuk mengambil sebuah data buku di server session
+   - Menggunakan GET untuk mengambil sebuah data buku di server session
